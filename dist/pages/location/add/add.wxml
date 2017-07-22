@@ -1,0 +1,31 @@
+
+<view class="content">
+    <form bindsubmit="formSubmit">
+        <view class="section">
+            <view class="name">收货人</view>
+            <input name="consignee" placeholder="请填写收货人姓名" value="{{addressInfo.consignee}}"/>
+        </view>
+        <view class="section">
+            <view class="name">联系方式</view>
+            <input name="tel" placeholder="请填写联系方式" value="{{addressInfo.tel}}"/>
+        </view>
+        <view class="section">
+            <view class="name">详细地址</view>
+            <view class="address-detail">
+                <textarea name="address" auto-height auto-focus placeholder="请填写到街道门牌号" value="{{addressInfo.address}}"/>
+            </view>
+        </view>
+
+        <view class="section">
+            <view class="name">备注</view>
+            <input name="ps" placeholder="请填写备注" value="{{addressInfo.ps}}"/>
+        </view>
+
+        <view class="btn-area">
+            <button formType="submit">确认提交信息</button>
+        </view>
+    </form>
+</view>
+
+<import src="/asset/template/backhome.wxml" />
+<template is="backhome"/>

@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/ordering/ordering",
+    "pages/payorder/payorder",
+    "pages/user/user",
+    "pages/useroperation/useroperation",
+    "pages/search/search",
+    "pages/waimai/waimai",
+    "pages/location/add/add",
+    "pages/waimaiorder/waimaiorder",
+    "pages/gopay/gopay"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ed4d30",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "WeApp Boilerplate",
+    "backgroundColor": "#ed4d30",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#f00",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "images/home_2.png",
+        "selectedIconPath": "images/home_1.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/user/user",
+        "iconPath": "images/mine_2.png",
+        "selectedIconPath": "images/mine_1.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}
